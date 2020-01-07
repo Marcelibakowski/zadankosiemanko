@@ -1,0 +1,18 @@
+/// Suma Cyfr liczby całkowitej
+/// autor: Marceli bąkowski
+/// data:2020-00-07
+
+#include <iostream>
+using namespace std;
+int main(){
+ int number,r;
+ int suma = 0;
+ cin>>number;
+ while(number>0)
+ {
+     r = number %10;
+     suma +=r;
+     number /=10;
+ }
+ cout<<suma;
+}
